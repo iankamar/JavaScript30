@@ -57,8 +57,8 @@
     //   }
     // });
 
-    const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
-    console.table(ordered);
+    const ordered = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+    console.log(ordered);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
